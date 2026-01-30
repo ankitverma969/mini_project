@@ -1,14 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
-  const accessKey = "904a2081-0ecf-4f3d-ae21-8618f1f34fef";
+  const statusBox = document.getElementById("form-status");
 
-  if (!form) return;
+  if (!form || !statusBox) return;
 
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
+    statusBox.className = "form-status";
+    statusBox.style.display = "block";
+    statusBox.textContent = "Sending message...";
+
     const formData = new FormData(form);
-    formData.append("access_key", accessKey);
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -19,13 +22,19 @@ document.addEventListener("DOMContentLoaded", () => {
       const result = await response.json();
 
       if (result.success) {
-        alert("Message sent successfully! I will get back to you soon.");
+        statusBox.classList.add("success");
+        statusBox.textContent =
+          "✅ Thank you! Your message has been sent successfully.";
         form.reset();
       } else {
-        alert("Submission failed. Please try again.");
+        statusBox.classList.add("error");
+        statusBox.textContent =
+          "❌ Something went wrong. Please try again.";
       }
     } catch (error) {
-      alert("Network error. Please try again later.");
+      statusBox.classList.add("error");
+      statusBox.textContent =
+        "❌ Network error. Please try again later.";
     }
   });
 });

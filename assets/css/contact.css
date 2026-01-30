@@ -1,4 +1,4 @@
-/* ================= CONTACT SECTION ================= */
+
 .contact {
   background-color: var(--white);
 }
@@ -10,19 +10,17 @@
   color: #475569;
 }
 
-/* ================= CONTACT FORM ================= */
+
 .contact-form {
   max-width: 600px;
   margin: auto;
-
   background-color: var(--light-bg);
   padding: 2.5rem;
   border-radius: 12px;
-
   box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
-/* ================= FORM GROUP ================= */
+
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -33,7 +31,7 @@
   font-weight: 600;
 }
 
-/* ================= INPUTS & TEXTAREA ================= */
+
 .form-group input,
 .form-group textarea {
   width: 100%;
@@ -41,41 +39,49 @@
   border-radius: 6px;
   border: 1px solid #cbd5f5;
   font-size: 1rem;
-
   transition: var(--transition);
 }
 
-/* ================= FOCUS PSEUDO-CLASS ================= */
+
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
 }
 
-/* ================= SUBMIT BUTTON ================= */
+
 .contact-form .btn {
   width: 100%;
   margin-top: 1rem;
 }
 
-/* ================= MEDIA QUERIES ================= */
 
-/* Tablet */
-@media (max-width: 768px) {
-  .contact-form {
-    padding: 2rem;
-  }
-}
-
-/* Mobile */
 @media (max-width: 480px) {
   .contact-form {
     padding: 1.5rem;
   }
+}
 
-  .form-group input,
-  .form-group textarea {
-    font-size: 0.95rem;
-  }
+
+.form-status {
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  display: none;
+}
+
+.form-status.success {
+  background-color: #dcfce7;
+  color: #166534;
+  display: block;
+}
+
+.form-status.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  display: block;
 }
