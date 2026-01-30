@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ankit Verma | Portfolio</title>
 
-  <link rel="stylesheet" href="assets/css/index.css" />
   <link rel="stylesheet" href="assets/css/common.css" />
+  <link rel="stylesheet" href="assets/css/index.css" />
 
-  <link rel="stylesheet"
+ 
+  <link
+    rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
 </head>
@@ -17,7 +19,7 @@
 
   <header class="header">
     <nav class="navbar">
-      <div class="logo">Ankit<span>.</span></div>
+      <div class="logo">AnkitVerma<span>.</span></div>
 
       <ul class="nav-links">
         <li><a href="index.html" class="active">Home</a></li>
@@ -28,12 +30,11 @@
     </nav>
   </header>
 
-
   <section class="hero">
     <div class="hero-text">
       <h1>Hello, I'm <span>Ankit Verma</span></h1>
       <p>
-        Frontend Developer | AI & ML Student  
+        AI & ML Student | Full-Stack Developer 
         Building responsive and modern web interfaces.
       </p>
 
@@ -41,20 +42,30 @@
     </div>
 
     <div class="hero-image">
-      <img src="assets/images/demo.gif" alt="Project Demo GIF">
+      <img src="assets/images/demo.gif" alt="Project Demo GIF" />
     </div>
   </section>
 
   <section class="skills">
     <h2 class="section-title">My Skills</h2>
 
-    <div class="skills-container">
-      <div class="skill-card">HTML</div>
-      <div class="skill-card">CSS</div>
-      <div class="skill-card">JavaScript</div>
-      <div class="skill-card">React</div>
-      <div class="skill-card">Node.js</div>
-      <div class="skill-card">Git & GitHub</div>
+
+    <div class="skill-tabs">
+      <button class="tab active" data-skill="ai">AI & ML</button>
+      <button class="tab" data-skill="frontend">Frontend</button>
+      <button class="tab" data-skill="backend">Backend</button>
+      <button class="tab" data-skill="api">APIs</button>
+      <button class="tab" data-skill="database">Database</button>
+      <button class="tab" data-skill="languages">Languages</button>
+      <button class="tab" data-skill="tools">Tools</button>
+      <button class="tab" data-skill="core">Core CS</button>
+    </div>
+
+
+    <div class="skills-marquee">
+      <div class="skills-track" id="skills-track">
+ 
+      </div>
     </div>
   </section>
 
@@ -63,14 +74,14 @@
     <p>© 2026 Ankit Verma. All Rights Reserved.</p>
 
     <div class="social-icons">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/ankitverma969"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ankitverma969/"><i class="fab fa-linkedin"></i></a>
+      <a href="hpvankitverma@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
   </footer>
 
 
-  <script src="assets/js/index.js"></script>
   <script src="assets/js/common.js"></script>
+  <script src="assets/js/index.js"></script>
 </body>
 </html>
