@@ -1,99 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankit Verma | Portfolio</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Font Awesome (social icons) -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
+
 <body>
-<em>CDF</em>
-<i>ABC</i>
-<pre class="ascii-comment">
-==============================
-About Subscript and Superscript
-==============================
-</pre>
 
-<p>H<sub>2</sub>0</p>
-<p>x<sup>2</sup></p>
+  <!-- ================= NAVBAR ================= -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Ankit<span>.</span></div>
 
-<pre>
-Two roads diverged in a yellow wood,
-And sorry I could not travel both
-I took the one less traveled by,
-And that has made all the difference.
-</pre>
-<pre class="ascii-comment">
-==============================
-        About List
-==============================
-</pre>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<ul>
-    <li>Ankit</li>
-    <li>Verma</li>
-</ul>
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Ankit Verma</span></h1>
+      <p>
+        Frontend Developer | AI & ML Student  
+        Building responsive and modern web interfaces.
+      </p>
 
-<ol>
-    <li>Ankit</li>
-    <li>Verma</li>
-</ol>
-    
+      <a href="projects.html" class="btn">View Projects</a>
+    </div>
 
-<pre class="ascii-comment">
-==============================
-    Table Tags
-==============================
-</pre>
+    <div class="hero-image">
+      <!-- ✅ GIF IMAGE -->
+      <img src="assets/images/demo.gif" alt="Project Demo GIF">
+    </div>
+  </section>
 
-<table border="1">
-<tr>
-    <td>A</td>
-    <td>B</td>
-    <td>C</td>
-</tr>
-<tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-</tr>
-</table>
+  <!-- ================= SKILLS SECTION ================= -->
+  <section class="skills">
+    <h2 class="section-title">My Skills</h2>
 
-<table border="1">
-    <caption>Student List</caption>
-    <thead>
-        <tr>
-            <td>Roll</td>
-            <td>Name</td>
-            <td>Marks</td>
-        </tr>
-    </thead>
+    <div class="skills-container">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">React</div>
+      <div class="skill-card">Node.js</div>
+      <div class="skill-card">Git & GitHub</div>
+    </div>
+  </section>
 
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Ankit</td>
-            <td>85</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Omkar</td>
-            <td>90</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Raj</td>
-            <td>100</td>
-        </tr>
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© 2026 Ankit Verma. All Rights Reserved.</p>
 
-        <tfoot>
-            <tr>
-                <td colspan="3">End Of The Report</td>
-            </tr>
-        </tfoot>
-    </tbody>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
 
-</table>
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
