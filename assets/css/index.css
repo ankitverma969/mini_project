@@ -1,0 +1,105 @@
+/* ================= HERO SECTION ================= */
+.hero {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text h1 span {
+  color: var(--primary-color);
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #475569;
+}
+
+/* ================= HERO IMAGE (GIF) ================= */
+.hero-image img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: var(--transition);
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+
+/* ================= SKILLS SECTION ================= */
+.skills {
+  background-color: var(--white);
+}
+
+.skills-container {
+  max-width: 1000px;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skill-card {
+  background-color: var(--light-bg);
+  padding: 1.2rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.skill-card:nth-child(odd) {
+  background-color: #e0e7ff;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .skill-card {
+    padding: 1rem 1.5rem;
+  }
+}
